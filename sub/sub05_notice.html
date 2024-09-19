@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매일유업</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/main/favicon.ico" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/swiper-bundle.min.js"></script>
+  <script defer src="../js/sub.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1><a href="#"><img src="../img/main/logo_w.png" alt="매일유업"></a></h1>
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">회사소개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">기업소개</a>
+                </li>
+                <li>
+                  <a href="#">가치체계</a>
+                </li>
+                <li>
+                  <a href="#">인사말</a>
+                </li>
+                <li>
+                  <a href="#">연구소</a>
+                </li>
+                <li>
+                  <a href="#">공장</a>
+                </li>
+                <li>
+                  <a href="#">글로벌사업</a>
+                </li>
+                <li>
+                  <a href="#">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+            </li>
+            <li>
+              <a href="#">사회공헌</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">사회공헌 소개</a>
+                </li>
+                <li>
+                  <a href="#">나눔 활동</a>
+                </li>
+                <li>
+                  <a href="#">사회공헌 연혁</a>
+                </li>
+                <li>
+                  <a href="#">나눔소식</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상생&middot;윤리경영</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">상생경영</a>
+                </li>
+                <li>
+                  <a href="#">윤리경영</a>
+                </li>
+                <li>
+                  <a href="#">가족친화 경영</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">IR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">경영정보</a>
+                </li>
+                <li>
+                  <a href="#">재무정보</a>
+                </li>
+                <li>
+                  <a href="#">공시정보</a>
+                </li>
+                <li>
+                  <a href="#">IR 자료실</a>
+                </li>
+                <li>
+                  <a href="#">공고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">광고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG 정보 공개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">환경경영(E)</a>
+                </li>
+                <li>
+                  <a href="#">사회적 가치(S)</a>
+                </li>
+                <li>
+                  <a href="#">지배구조(G)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_top">
+          <button class="btn_ham">전체 메뉴 보기</button>
+          <ul class="family_site">
+            <li>
+              <a href="#">매일유업</a>
+            </li>
+            <li>
+              <a href="#">매일아이</a>
+            </li>
+            <li>
+              <a href="#">공식몰</a>
+            </li>
+            <li>
+              <a href="#">Maeil Do</a>
+            </li>
+          </ul>
+          <ul class="util">
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util01-login.png" alt="로그인">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util02-handshake.png" alt="인재채용">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util03-SC.png" alt="고객센터">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util04-language.png" alt="언어설정">
+              </a>
+            </li>
+            <li>
+              <button class="btn_search">
+                검색 영역 여닫기
+              </button>
+            </li>
+          </ul>
+        </div><!--//header_top-->
+      </div><!--//.inner-->
+      <div id="search" class="fix">
+        <div class="inner">
+          <form action="">
+            <fieldset>
+              <legend>검색영역</legend>
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <button type="reset">
+                <img src="../img/main/icon-search-delete.png" alt="검색어 지우기">
+              </button>
+              <button type="submit">
+                <img src="../img/main/icon-util05-search.png" alt="검색">
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div id="ham">
+        <div class="mgnb_header"></div>
+        <ul class="mutil">
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util01-login.png" alt="로그인">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util02-handshake.png" alt="인재채용">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util03-SC.png" alt="고객센터">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util04-language.png" alt="언어설정">
+            </a>
+          </li>
+        </ul>
+        <ul class="mgnb">
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">기업소개</a>
+              </li>
+              <li>
+                <a href="#">가치체계</a>
+              </li>
+              <li>
+                <a href="#">인사말</a>
+              </li>
+              <li>
+                <a href="#">연구소</a>
+              </li>
+              <li>
+                <a href="#">공장</a>
+              </li>
+              <li>
+                <a href="#">글로벌사업</a>
+              </li>
+              <li>
+                <a href="#">오시는길</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">브랜드</a>
+          </li>
+          <li>
+            <a href="#">사회공헌</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">사회공헌 소개</a>
+              </li>
+              <li>
+                <a href="#">나눔 활동</a>
+              </li>
+              <li>
+                <a href="#">사회공헌 연혁</a>
+              </li>
+              <li>
+                <a href="#">나눔소식</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">상생&middot;윤리경영</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">상생경영</a>
+              </li>
+              <li>
+                <a href="#">윤리경영</a>
+              </li>
+              <li>
+                <a href="#">가족친화 경영</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">IR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">경영정보</a>
+              </li>
+              <li>
+                <a href="#">재무정보</a>
+              </li>
+              <li>
+                <a href="#">공시정보</a>
+              </li>
+              <li>
+                <a href="#">IR 자료실</a>
+              </li>
+              <li>
+                <a href="#">공고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">광고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ESG 정보 공개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">환경경영(E)</a>
+              </li>
+              <li>
+                <a href="#">사회적 가치(S)</a>
+              </li>
+              <li>
+                <a href="#">지배구조(G)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="mfamily_site">
+          <li>
+            <a href="#">매일유업</a>
+          </li>
+          <li>
+            <a href="#">매일아이</a>
+          </li>
+          <li>
+            <a href="#">공식몰</a>
+          </li>
+          <li>
+            <a href="#">Maeil Do</a>
+          </li>
+        </ul>
+      </div>
+      <div class="depth2_bg"></div>
+    </header>
+    <div class="header_bg sub_05">
+      <ul class="breadcrumb">
+        <li>
+          <a href="#">
+            <img src="../img/sub/icon-breadcrumb-home.png" alt="홈">
+          </a>
+        </li>
+        <li>
+          <a href="#">PR</a>
+        </li>
+        <li>
+          <a href="#">공지사항</a>
+        </li>
+      </ul>
+    </div>
+    <main id="main">
+      <div class="main_top">
+        <ul class="present-depth">
+          <li class="selected">
+            <a href="#">공지사항</a>
+          </li>
+        </ul>
+        <div class="tit_box">
+          <h2>Maeil News</h2>
+          <span></span>
+          <p>매일의 소식을 알려드립니다.</p>
+        </div>
+      </div>
+
+      <section id="notice">
+        <div class="inner">
+          <div class="notice_page_list">
+            <ul class="notice_list">
+              <li>
+                <div class="closed">
+                  <p>27</p>
+                  <dl>
+                    <dt>[공지] 식품 소비의 새로운 기준 '소비기한'</dt>
+                    <dd>2024-04-25<span> 18:14:15</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+                <div class="opened">
+                  <div class="content_box">
+                    <img src="../img/sub/img-notice-list01.png"
+                      alt="2023년 1월 1일 소비기한 표시제가 시행됩니다. 우리도 안심, 환경도 안심. 반가워요, 소비기한! 식품의 판매 허용 기한인 영업자 중심의 유통기한에서 보관방법 준수 시 안전하게 섭취 가능한 기한을 알려주는 소비자 중심의 소비기한 표시제로 변경됩니다. 과학적 검증을 거쳐 설정된 소비기한으로 식품 안전도 지키고, 식품 폐기물도 줄여 지구환경도 지킵니다.">
+                  </div>
+                  <div class="btn_group">
+                    <button>
+                      <img src="../img/sub/icon-notice-print.png" alt="인쇄하기">
+                    </button>
+                    <button>
+                      <img src="../img/sub/icon-notice-share.png" alt="공유하기">
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>26</p>
+                  <dl>
+                    <dt>[공지] 매일유업 이용약관(23.11.22) 및 개인정보 처리방침(23.11.15) 개정 공지</dt>
+                    <dd>2023-11-08<span> 11:14:02</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+                <div class="opened">
+                  <div class="content_box">
+                    <p>안녕하세요, 매일유업입니다.</p>
+                    <p>먼저 매일유업 제품 및 서비스를 이용해주시는 회원님들께 감사의 말씀을 드리며, 이용약관 및 개인정보 처리방침이 일부 개정되어 공지 드립니다.</p>
+                    <p>1. 이용약관 및 개인정보 처리방침 개정 사유<br>
+                      - 개인정보보호법 개정(개인정보 파기 특례규정 삭제)에 따른 장기미이용자 정책 변경<br>
+                      - 개인정보 처리위탁 신규 업체 추가 및 업체 정보 갱신</p>
+                    <p>2. 이용약관 변경 내용<br>
+                      - 장기미이용자 정책 변경에 따른 관련 용어 조항 삭제<br>
+                      • 제2조 (용어의 정의)<br>
+                      ⑩ 휴면회원 : 회원가입 이후 1년 동안 로그인 기록이 없는 회원을 의미합니다.</p>
+                    <p>3. 개인정보 처리방침 변경 내용<br>
+                      - 장기미이용자 관련 조항 삭제<br>
+                      • 제8조(장기 미이용 회원 개인정보 분리 보관)</p>
+                    <p>- 개인정보 제3자 제공 및 처리 위탁 업체 추가<br>
+                      • (주)이루다마케팅 : 홍보 대행 및 이벤트 경품 발송<br>
+                      • (주)더즌 : 가정배달 이용 고객 청구서 문자 발송</p>
+                    <p>4. 적용시기<br>
+                      - 개정된 이용약관은 2023년 11월 22부터 효력이 발생하며, 개정된 이용약관 전문은 11월 22일부터 홈페이지상에서 확인이 가능합니다.
+                    </p>
+                    <p>- 개정된 개인정보 처리방침은 2023년 11월 15일부터 효력이 발생하며, 개정된 개인정보 처리방침 전문은 11월 15일부터 홈페이지상에서 확인이 가능합니다.</p>
+                    <p>- 회원님께서는 효력발생 전까지 이용약관 및 개인정보 처리방침 개정 사항에 동의하지 않으시는 경우 고객센터 및 회원탈퇴의 방법으로 거부의사를 표시할 수 있으며, 기한 내에
+                      거부의사가 없는 경우 본 개정 사항에 동의하신 것으로 간주됩니다.</p>
+                    <p>앞으로도 고객 의견을 소중히 생각하는 매일유업이 되겠습니다.</p>
+                    <p>이용약관 및 개인정보 처리방침 변경과 관련하여 궁금하신 점이나 소중한 의견은 언제든지 고객센터(1588-1539, 내선5)로 알려주시면 안내해드리도록 하겠습니다.</p>
+                    <p>감사합니다.</p>
+                  </div>
+                  <div class="btn_group">
+                    <button>
+                      <img src="../img/sub/icon-notice-print.png" alt="인쇄하기">
+                    </button>
+                    <button>
+                      <img src="../img/sub/icon-notice-share.png" alt="공유하기">
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>25</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정 공지</dt>
+                    <dd>2023-06-26<span> 10:40:00</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>24</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정 공지</dt>
+                    <dd>2023-05-15<span>13:28:29</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>23</p>
+                  <dl>
+                    <dt>[공지] 맘마밀 안심소스 원재료 변경에 따른 포장재 사용 안내</dt>
+                    <dd>2023-05-09<span>12:56:16</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>22</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정 공지</dt>
+                    <dd>2023-03-27<span>11:10:42</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>21</p>
+                  <dl>
+                    <dt>[규제특례 이용자 고지사항] 스마트 라벨을 활용한 식품 표시 간소화_앱솔루트 명작</dt>
+                    <dd>2023-02-27<span>19:38:09</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>20</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정 공지</dt>
+                    <dd>2022-11-11<span>16:40:11</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>19</p>
+                  <dl>
+                    <dt>[공지] 소비기한 표시제 시행 안내</dt>
+                    <dd>2022-10-12<span>17:45:44</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <ul class="notice_list">
+              <li>
+                <div class="closed">
+                  <p>18</p>
+                  <dl>
+                    <dt>[공지] 테너 베이스 청포도 원재료 변경에 따른 포장재 사용 안내</dt>
+                    <dd>2022-09-08<span>13:14:10</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>17</p>
+                  <dl>
+                    <dt>[공지] 유어스(you us) 피자치즈 원산지 변경에 따른 포장재 사용 안내</dt>
+                    <dd>2022-09-05<span>12:42:08</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>16</p>
+                  <dl>
+                    <dt>[공지] 체다치즈 원산지 변경에 따른 포장재 사용 안내</dt>
+                    <dd>2022-06-29<span>13:12:22</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>15</p>
+                  <dl>
+                    <dt>[공지] 본인인증 서비스 일시 중단 안내</dt>
+                    <dd>2022-06-13<span>15:13:31</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>14</p>
+                  <dl>
+                    <dt>[공지] 매일두 포인트 사용 정책 변경 이용약관 개정공지</dt>
+                    <dd>2022-06-02<span>14:38:13</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>13</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 변경 안내</dt>
+                    <dd>2022-02-16<span>10:34:03</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>12</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정 안내</dt>
+                    <dd>2021-02-16<span>15:11:08</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>11</p>
+                  <dl>
+                    <dt>개인정보처리방침 변경 안내</dt>
+                    <dd>2020-12-17<span>14:23:01</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>10</p>
+                  <dl>
+                    <dt>[공지] 개인 정보 처리 방침 개정 안내</dt>
+                    <dd>2020-07-30<span>14:53:37</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <ul class="notice_list">
+              <li>
+                <div class="closed">
+                  <p>9</p>
+                  <dl>
+                    <dt>[공지] 개인정보 처리방침 개정안내</dt>
+                    <dd>2020-04-23<span>15:40:18</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>8</p>
+                  <dl>
+                    <dt>[공지]매일유업의 개인정보 처리방침 개정 안내</dt>
+                    <dd>2019-12-19<span>18:29:21</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>7</p>
+                  <dl>
+                    <dt>[매일유업 개인정보처리방침]</dt>
+                    <dd>2018-07-06<span></span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>6</p>
+                  <dl>
+                    <dt>[고객센터 전화상담 지연 안내]</dt>
+                    <dd>2019-05-22<span>11:43:00</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>5</p>
+                  <dl>
+                    <dt>개인정보처리방침 변경의 건</dt>
+                    <dd>2018-09-07<span>10:29:03</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>4</p>
+                  <dl>
+                    <dt>개인정보처리방침 변경안내 (2018.08.14)</dt>
+                    <dd>2018-08-07<span>15:27:10</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>3</p>
+                  <dl>
+                    <dt>개인정보처리방침 변경안내</dt>
+                    <dd>2018-07-01<span>16:06:31</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>2</p>
+                  <dl>
+                    <dt>2017년 행복한 새해 되시길 바랍니다.</dt>
+                    <dd>2016-12-30<span>13:35:27</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="closed">
+                  <p>1</p>
+                  <dl>
+                    <dt>행복한 한가위를 기원합니다.</dt>
+                    <dd>2016-09-12<span>13:15:18</span></dd>
+                  </dl>
+                  <button class="btn_open">
+                    <i class="bi bi-chevron-down"></i>
+                    <span>공지펼치기</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="notice_pagination">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="left">
+            <div class="footer_logo">
+              <img src="../img/main/logo_footer.png" alt="매일유업">
+            </div>
+            <ul class="contract_list">
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">전자입찰(협력사용)</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul class="sns_icon_list">
+              <li>
+                <img src="../img/main/icon_sns01.png" alt="인스타그램">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns02.png" alt="페이스북">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns03.png" alt="유튜브">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns04.png" alt="네이버">
+              </li>
+            </ul>
+            <select>
+              <option>패밀리사이트</option>
+              <option>매일홀딩스</option>
+              <option>매일헬스뉴트리션</option>
+              <option>제로투세븐</option>
+              <option>상하농원</option>
+              <option>엠즈씨드(폴바셋)</option>
+              <option>크리스탈제이드</option>
+              <option>엠즈씨드(더키친일뽀르노)</option>
+              <option>엠즈베버리지</option>
+              <option>엠즈푸드시스템</option>
+              <option>엠즈파트너스</option>
+              <option>레뱅드매일</option>
+              <option>엠디웰</option>
+              <option>엠즈베이커스</option>
+              <option>매일오더</option>
+            </select>
+            <div class="tel">
+              <a href="tel:1588-1539">Contact US : 1588-1539</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="left">
+            <address>서울시 종로구 종로 1길 50 더 케이 트윈타워 A동 2층</address>
+            <div class="copy">Copyright(c) 2016 by Maeil Dairies Co.Ltd All rights reserved.</div>
+          </div>
+          <p class="portfolio">본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, <br>사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.</p>
+        </div>
+      </div>
+    </footer>
+  </div><!--//#wrap-->
+</body>
+
+</html>

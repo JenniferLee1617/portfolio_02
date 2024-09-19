@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매일유업</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/main/favicon.ico" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- js -->
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1><a href="#"><img src="img/main/logo_w.png" alt="매일유업"></a></h1>
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">회사소개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">기업소개</a>
+                </li>
+                <li>
+                  <a href="#">가치체계</a>
+                </li>
+                <li>
+                  <a href="#">인사말</a>
+                </li>
+                <li>
+                  <a href="#">연구소</a>
+                </li>
+                <li>
+                  <a href="#">공장</a>
+                </li>
+                <li>
+                  <a href="#">글로벌사업</a>
+                </li>
+                <li>
+                  <a href="#">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+              <!--        <ul class="depth2">
+                <li>
+                  <a href="#">전체</a>
+                </li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="#">사회공헌</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">사회공헌 소개</a>
+                </li>
+                <li>
+                  <a href="#">나눔 활동</a>
+                </li>
+                <li>
+                  <a href="#">사회공헌 연혁</a>
+                </li>
+                <li>
+                  <a href="#">나눔소식</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상생&middot;윤리경영</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">상생경영</a>
+                </li>
+                <li>
+                  <a href="#">윤리경영</a>
+                </li>
+                <li>
+                  <a href="#">가족친화 경영</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">IR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">경영정보</a>
+                </li>
+                <li>
+                  <a href="#">재무정보</a>
+                </li>
+                <li>
+                  <a href="#">공시정보</a>
+                </li>
+                <li>
+                  <a href="#">IR 자료실</a>
+                </li>
+                <li>
+                  <a href="#">공고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">광고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG 정보 공개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">환경경영(E)</a>
+                </li>
+                <li>
+                  <a href="#">사회적 가치(S)</a>
+                </li>
+                <li>
+                  <a href="#">지배구조(G)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header_top">
+          <button class="btn_ham">전체 메뉴 보기</button>
+          <ul class="family_site">
+            <li>
+              <a href="#">매일유업</a>
+            </li>
+            <li>
+              <a href="#">매일아이</a>
+            </li>
+            <li>
+              <a href="#">공식몰</a>
+            </li>
+            <li>
+              <a href="#">Maeil Do</a>
+            </li>
+          </ul>
+          <ul class="util">
+            <li>
+              <a href="#">
+                <img src="img/main/icon-util01-login.png" alt="로그인">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/main/icon-util02-handshake.png" alt="인재채용">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/main/icon-util03-SC.png" alt="고객센터">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/main/icon-util04-language.png" alt="언어설정">
+              </a>
+            </li>
+            <li>
+              <button class="btn_search">
+                검색 영역 여닫기
+              </button>
+            </li>
+          </ul>
+        </div><!--//header_top-->
+      </div><!--//.inner-->
+      <div id="search">
+        <div class="inner">
+          <form action="">
+            <fieldset>
+              <legend>검색영역</legend>
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <button type="reset">
+                <img src="img/main/icon-search-delete.png" alt="검색어 지우기">
+              </button>
+              <button type="submit">
+                <img src="img/main/icon-util05-search.png" alt="검색">
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div id="ham">
+        <div class="mgnb_header"></div>
+        <ul class="mutil">
+          <li>
+            <a href="#">
+              <img src="img/main/icon-util01-login.png" alt="로그인">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/main/icon-util02-handshake.png" alt="인재채용">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/main/icon-util03-SC.png" alt="고객센터">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/main/icon-util04-language.png" alt="언어설정">
+            </a>
+          </li>
+        </ul>
+        <ul class="mgnb">
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">기업소개</a>
+              </li>
+              <li>
+                <a href="#">가치체계</a>
+              </li>
+              <li>
+                <a href="#">인사말</a>
+              </li>
+              <li>
+                <a href="#">연구소</a>
+              </li>
+              <li>
+                <a href="#">공장</a>
+              </li>
+              <li>
+                <a href="#">글로벌사업</a>
+              </li>
+              <li>
+                <a href="#">오시는길</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">브랜드</a>
+          </li>
+          <li>
+            <a href="#">사회공헌</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">사회공헌 소개</a>
+              </li>
+              <li>
+                <a href="#">나눔 활동</a>
+              </li>
+              <li>
+                <a href="#">사회공헌 연혁</a>
+              </li>
+              <li>
+                <a href="#">나눔소식</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">상생&middot;윤리경영</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">상생경영</a>
+              </li>
+              <li>
+                <a href="#">윤리경영</a>
+              </li>
+              <li>
+                <a href="#">가족친화 경영</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">IR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">경영정보</a>
+              </li>
+              <li>
+                <a href="#">재무정보</a>
+              </li>
+              <li>
+                <a href="#">공시정보</a>
+              </li>
+              <li>
+                <a href="#">IR 자료실</a>
+              </li>
+              <li>
+                <a href="#">공고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">광고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ESG 정보 공개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">환경경영(E)</a>
+              </li>
+              <li>
+                <a href="#">사회적 가치(S)</a>
+              </li>
+              <li>
+                <a href="#">지배구조(G)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="mfamily_site">
+          <li>
+            <a href="#">매일유업</a>
+          </li>
+          <li>
+            <a href="#">매일아이</a>
+          </li>
+          <li>
+            <a href="#">공식몰</a>
+          </li>
+          <li>
+            <a href="#">Maeil Do</a>
+          </li>
+        </ul>
+      </div>
+      <div class="depth2_bg"></div>
+    </header>
+    <main id="main">
+      <section id="main_visual">
+        <div class="swiper main_visual">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide" data-swiper-autoplay="2000">
+              <video src="img/main/mov_mv01.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide" data-swiper-autoplay="27220">
+              <video src="img/main/mov_mv02.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv03.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv04.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv05.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv06.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv07.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+            <li class="swiper-slide">
+              <video src="img/main/mov_mv08.mp4" autoplay muted data-autoplay class="mov"></video>
+            </li>
+          </ul>
+          <div class="mv_control">
+            <div class="swiper-pagination"></div>
+          </div><!--//.mv_control-->
+        </div>
+      </section><!--//mina_visual-->
+      <section id="product">
+        <div class="tit_box">
+          <h2>Product</h2>
+          <p class="sub_txt">모두가 맛있게, 건강하게 즐길 수 있는<br>
+            매일의 제품을 소개합니다.</p>
+          <p class="p1">배앓이 걱정 없는 우유와<br>
+            착한 유원료로 만든 유제품들을 소개합니다!</p>
+          <p class="p2">속을 든든히 채워줄 간편식부터<br>
+            입을 즐겁게 해줄 디저트,<br>
+            건강을 책임져줄 건강식품까지 모두 만나보세요!</p>
+          <p class="p3">우리 아이가 맛보는 세상,<br>
+            더 건강하고 더 맛있게 준비했습니다!</p>
+        </div><!--//tit_box-->
+        <div class="list_content">
+          <div class="swiper dairy_list">
+            <h3>Dairies</h3>
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy01.jpg" alt=".">
+                  <p>상하목장<br>유기농 우유</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy02.jpg." alt=".">
+                  <p>어메이징 오트<br>커피&초콜릿</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy03.jpg" alt=".">
+                  <p>매일 바이오<br>그릭 요거트</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy04.jpg" alt=".">
+                  <p>상하목장<br>유기농 요거트</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy05.jpg" alt=".">
+                  <p>매일 바이오<br>썬화이버 드링킹 요거트</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy06.jpg" alt=".">
+                  <p>아몬드 브리즈</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy07.jpg" alt=".">
+                  <p>어메이징 오트</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy08.jpg" alt=".">
+                  <p>상하목장<br>아이스크림</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_dairy09.jpg" alt=".">
+                  <p>골든 밀크</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper food_list">
+            <h3>Foods</h3>
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food01.jpg" alt=".">
+                  <p>설렉스<br>프로핏 웨이프로틴</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food02.jpg" alt=".">
+                  <p>셀렉스<br>밀크세라마이드 콜라겐</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food03.jpg" alt=".">
+                  <p>더그레잇티 콤부차</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food04.jpg" alt=".">
+                  <p>메디웰<br>균형영양식</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food05.jpg" alt=".">
+                  <p>데르트<br>젤리가 된 진짜 과일</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food06.jpg" alt=".">
+                  <p>셀렉스<br>슬림25 다이어트쉐이크</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food07.jpg" alt=".">
+                  <p>매일야채<br>매일 채우는 야채의 힘</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food08.jpg" alt=".">
+                  <p>셀렉스<br>프로핏 웨이프로틴<br>스파클링</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food09.jpg" alt=".">
+                  <p>바리스타룰스<br>그란데<br>아메리카노,라떼,스위트</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_food10.jpg" alt=".">
+                  <p>상하목장<br>유기농주스</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper toddler_list">
+            <h3>for Toddlers</h3>
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby01.jpg" alt=".">
+                  <p>앱솔루트<br>명작</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby02.jpg" alt=".">
+                  <p>맘마밀<br>안심 밥상 이유식</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby03.jpg" alt=".">
+                  <p>맘마밀<br>안심 이유식 퓨레</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby04.jpg" alt=".">
+                  <p>요미요미<br>유기농 주스 과일 믹스</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby05.jpg" alt=".">
+                  <p>요미요미<br>오가닉 퍼프</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby06.jpg" alt=".">
+                  <p>요미요미<br>쌀떡뻥</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby07.jpg" alt=".">
+                  <p>키즈 부스트<br>밀크분유</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_product_baby08.jpg" alt=".">
+                  <p>상하목장<br>마이리틀<br>짜먹는 요거트</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!--//product_list-->
+      </section><!--//#product-->
+      <section id="company">
+        <div class="tit_box">
+          <h2>Business Overview</h2>
+          <p class="sub_txt">"남들이 가지 않은 길을 언제나 제일 먼저 갔습니다.<br>
+            그것이 우리의 사명이고, 우리의 몫입니다"</p>
+        </div>
+        <div class="content">
+          <div class="swiper company_list">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_company01.png" alt=".">
+                  <dl class="txt_box">
+                    <dt>Since 1960</dt>
+                    <dd>지난 50년간 건강한 식문화를 위해서<br>
+                      한길을 걸어왔습니다</dd>
+                    <dd>
+                      <a href="#" class="btn_more">더 알아보기</a>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_company02.png" alt=".">
+                  <dl class="txt_box">
+                    <dt>윤리경영</dt>
+                    <dd>우리는 건강한 매일, 맛있는 매일<br>
+                      새로운 매일을 경영합니다</dd>
+                    <dd>
+                      <a href="#" class="btn_more">더 알아보기</a>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_company03.png" alt=".">
+                  <dl class="txt_box">
+                    <dt>인재채용</dt>
+                    <dd>새로운 식문화를 창조하며 글로벌로 나아갈<br>
+                      Fresh한 인재들의 도전을 기다립니다</dd>
+                    <dd>
+                      <a href="#" class="btn_more">더 알아보기</a>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/main/img_company04.png" alt=".">
+                  <dl class="txt_box">
+                    <dt>MIC, <br>멈춤없는 새로움에 대한 도전</dt>
+                    <dd>우리는 건강한 매일, 맛있는 매일,<br>
+                      새로운 매일을 연구하고 개척해 갑니다.</dd>
+                    <dd>
+                      <a href="#" class="btn_more">더 알아보기</a>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination mobile-pagination"></div>
+          </div>
+          <div class="swiper company_txt">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <dl>
+                  <dt>윤리경영</dt>
+                  <dd>우리는 건강한 매일, 맛있는 매일<br>
+                    새로운 매일을 경영합니다</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt>인재채용</dt>
+                  <dd>새로운 식문화를 창조하며 글로벌로 나아갈<br>
+                    Fresh한 인재들의 도전을 기다립니다</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt>MIC, <br>멈춤없는 새로움에 대한 도전</dt>
+                  <dd>우리는 건강한 매일, 맛있는 매일,<br>
+                    새로운 매일을 연구하고 개척해 갑니다.</dd>
+                </dl>
+              </li>
+              <li class="swiper-slide">
+                <dl>
+                  <dt>Since 1960</dt>
+                  <dd>지난 50년간 건강한 식문화를 위해서<br>
+                    한길을 걸어왔습니다</dd>
+                </dl>
+              </li>
+            </ul>
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sns">
+        <div class="inner">
+          <div class="tit_box">
+            <h2>SNS</h2>
+            <p class="sub_txt">Maeil의 다양한 소식을<br>
+              SNS 계정으로 받아보세요.</p>
+          </div>
+          <div class="sns_list">
+            <div>
+              <ul class="column01">
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns01.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">freshmaeil</dt>
+                        <dd>[신상품]매일우유 크림소금빵 2종 (우유크림&초코크림)</dd>
+                        <dd>바닐라빈 콕콕 박힌 진한 우유크림 & 달콤한 초코향 가득한 초코크림 두가지 맛<br>
+                          매일우유 크림소금빵 2종은 이마트 24에서 만나보실 수 있어요</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns02.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">freshmaeil</dt>
+                        <dd>[이벤트]바이오 제로(~6/10)</dd>
+                        <dd>[EVENT 01] 바이오 제로, 내 이름을 불러줘!<br>
+                          [EVENT 02] 바이오 제로와 함께한 너의 모습을 보여줘!<br>
+                          [EVENT 03] 바이오 제로를 동네방네 널리 알려줘!</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns03.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">freshmaeil</dt>
+                        <dd>[캠페인]멸균팩 새가버치 프로젝트(6월 5일~6월 14일)</dd>
+                        <dd>드시고 남은 멸균팩을 메이커스 쿠폰과 어메이징오트로 바꿔드려요.<br>
+                          카카오메이커스에서 멸균팩 새가버치 캠페인에 동참해주세요<br></dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="column02">
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns04.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeil_absolute</dt>
+                        <dd>우리 아기를 위한 황금육아템 기획전!</dd>
+                        <dd>6/10~6/16, 단 7일간<br>
+                          더 업그레이드 된 앱솔루트 산양<br>
+                          다시 오지 않을 달콤한 혜택가로 만나보세요</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns05.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeil_absolute</dt>
+                        <dd>[맘스쿨]알똥 달똥 우리 아기똥 괜찮은걸까?(6월13일(목)14:00PM)</dd>
+                        <dd>[1]️맘스쿨 사전신청 (~6/11까지)<br>
+                          [2] 소문내기&사전질문 댓글 EVENT (방송 시작전까지)</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns06.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeil_absolute</dt>
+                        <dd>💘하루 1컵으로 채우는 영양간식💘 키즈부스트를 만나보세요!(~5/31(금))</dd>
+                        <dd>✔️ 뼈 형성에 도움을 주는 비타민D, 밀크칼슘, 비타민K2가 풍부한 나토균배양추출물<br>
+                          ✔️ 튼튼 성장을 돕는 아연, 효모베타글루칸, 오스테오폰틴(OPN) 까지!<br>
+                          ✔️ 하루 1컵 물이나 우유에 타서 간편하게</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="column03">
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns07.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeildoyou</dt>
+                        <dd>[이벤트]어메이징 모닝 AMAZING ATTACK</dd>
+                        <dd>현생에 치여 아침밥을 포기하는 소중한 누군가가 생각난다면?<br>
+                          어메이징오트.com에 접속해서 사연을 들려주세요.<br>
+                          매주 50팀을 뽑아, 어메이징 모닝세트를 보내드립니다.</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns08.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeildoyou</dt>
+                        <dd>[캠페인]다시 돌아온 멸균팩 새가버치 프로젝트 D-day(6월 5일~6월 14일)</dd>
+                        <dd>어메이징 오트와 함께하는 새가버치 캠페인이 드디어 오픈했습니다.<br>
+                          지금까지 열심히 멸균팩 모아두셨던 분들 얼른 캠페인 신청하러 달려가세요.</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/main/img_sns09.png" alt=".">
+                    </div>
+                    <div class="txt_box">
+                      <dl>
+                        <dt class="sns_maeil">maeildoyou</dt>
+                        <dd>[핫딜]어메이징 오트 바리스타 X 슈퍼말차 스페셜 콜라보 OPEN</dd>
+                        <dd>매주 화요일 오전 9시마다 핫딜 OPEN<br>
+                          조기 품절 주의!</dd>
+                      </dl>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brands">
+        <marquee behavior="" direction="">
+          <ul>
+            <li class="marquee01"></li>
+            <li class="marquee02"></li>
+            <li class="marquee03"></li>
+            <li class="marquee04"></li>
+            <li class="marquee05"></li>
+            <li class="marquee06"></li>
+            <li class="marquee07"></li>
+            <!-- 7 -->
+            <li class="marquee01"></li>
+            <li class="marquee02"></li>
+            <li class="marquee03"></li>
+            <li class="marquee04"></li>
+            <li class="marquee05"></li>
+            <li class="marquee06"></li>
+            <li class="marquee07"></li>
+            <!-- 7 -->
+            <li class="marquee01"></li>
+            <li class="marquee02"></li>
+            <li class="marquee03"></li>
+            <li class="marquee04"></li>
+            <li class="marquee05"></li>
+            <li class="marquee06"></li>
+            <li class="marquee07"></li>
+          </ul>
+        </marquee>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="left">
+            <div class="footer_logo">
+              <img src="img/main/logo_footer.png" alt="매일유업">
+            </div>
+            <ul class="contract_list">
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">전자입찰(협력사용)</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul class="sns_icon_list">
+              <li>
+                <img src="img/main/icon_sns01.png" alt="인스타그램">
+              </li>
+              <li>
+                <img src="img/main/icon_sns02.png" alt="페이스북">
+              </li>
+              <li>
+                <img src="img/main/icon_sns03.png" alt="유튜브">
+              </li>
+              <li>
+                <img src="img/main/icon_sns04.png" alt="네이버">
+              </li>
+            </ul>
+            <select>
+              <option>패밀리사이트</option>
+              <option>매일홀딩스</option>
+              <option>매일헬스뉴트리션</option>
+              <option>제로투세븐</option>
+              <option>상하농원</option>
+              <option>엠즈씨드(폴바셋)</option>
+              <option>크리스탈제이드</option>
+              <option>엠즈씨드(더키친일뽀르노)</option>
+              <option>엠즈베버리지</option>
+              <option>엠즈푸드시스템</option>
+              <option>엠즈파트너스</option>
+              <option>레뱅드매일</option>
+              <option>엠디웰</option>
+              <option>엠즈베이커스</option>
+              <option>매일오더</option>
+            </select>
+            <div class="tel">
+              <a href="tel:1588-1539">Contact US : 1588-1539</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="left">
+            <address>서울시 종로구 종로 1길 50 더 케이 트윈타워 A동 2층</address>
+            <div class="copy">Copyright(c) 2016 by Maeil Dairies Co.Ltd All rights reserved.</div>
+          </div>
+          <p class="portfolio">본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, <br>사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.</p>
+        </div>
+      </div>
+    </footer>
+  </div><!--//#wrap-->
+</body>
+
+</html>

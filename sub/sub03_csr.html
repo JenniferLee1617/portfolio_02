@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매일유업</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/main/favicon.ico" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/swiper-bundle.min.js"></script>
+  <script defer src="../js/sub.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <h1><a href="#"><img src="../img/main/logo_w.png" alt="매일유업"></a></h1>
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">회사소개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">기업소개</a>
+                </li>
+                <li>
+                  <a href="#">가치체계</a>
+                </li>
+                <li>
+                  <a href="#">인사말</a>
+                </li>
+                <li>
+                  <a href="#">연구소</a>
+                </li>
+                <li>
+                  <a href="#">공장</a>
+                </li>
+                <li>
+                  <a href="#">글로벌사업</a>
+                </li>
+                <li>
+                  <a href="#">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+            </li>
+            <li>
+              <a href="#">사회공헌</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">사회공헌 소개</a>
+                </li>
+                <li>
+                  <a href="#">나눔 활동</a>
+                </li>
+                <li>
+                  <a href="#">사회공헌 연혁</a>
+                </li>
+                <li>
+                  <a href="#">나눔소식</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">상생&middot;윤리경영</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">상생경영</a>
+                </li>
+                <li>
+                  <a href="#">윤리경영</a>
+                </li>
+                <li>
+                  <a href="#">가족친화 경영</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">IR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">경영정보</a>
+                </li>
+                <li>
+                  <a href="#">재무정보</a>
+                </li>
+                <li>
+                  <a href="#">공시정보</a>
+                </li>
+                <li>
+                  <a href="#">IR 자료실</a>
+                </li>
+                <li>
+                  <a href="#">공고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PR</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">광고</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ESG 정보 공개</a>
+              <ul class="depth2">
+                <li>
+                  <a href="#">환경경영(E)</a>
+                </li>
+                <li>
+                  <a href="#">사회적 가치(S)</a>
+                </li>
+                <li>
+                  <a href="#">지배구조(G)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_top">
+          <button class="btn_ham">전체 메뉴 보기</button>
+          <ul class="family_site">
+            <li>
+              <a href="#">매일유업</a>
+            </li>
+            <li>
+              <a href="#">매일아이</a>
+            </li>
+            <li>
+              <a href="#">공식몰</a>
+            </li>
+            <li>
+              <a href="#">Maeil Do</a>
+            </li>
+          </ul>
+          <ul class="util">
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util01-login.png" alt="로그인">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util02-handshake.png" alt="인재채용">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util03-SC.png" alt="고객센터">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../img/main/icon-util04-language.png" alt="언어설정">
+              </a>
+            </li>
+            <li>
+              <button class="btn_search">
+                검색 영역 여닫기
+              </button>
+            </li>
+          </ul>
+        </div><!--//header_top-->
+      </div><!--//.inner-->
+      <div id="search" class="fix">
+        <div class="inner">
+          <form action="">
+            <fieldset>
+              <legend>검색영역</legend>
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <button type="reset">
+                <img src="../img/main/icon-search-delete.png" alt="검색어 지우기">
+              </button>
+              <button type="submit">
+                <img src="../img/main/icon-util05-search.png" alt="검색">
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div id="ham">
+        <div class="mgnb_header"></div>
+        <ul class="mutil">
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util01-login.png" alt="로그인">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util02-handshake.png" alt="인재채용">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util03-SC.png" alt="고객센터">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../img/main/icon-util04-language.png" alt="언어설정">
+            </a>
+          </li>
+        </ul>
+        <ul class="mgnb">
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">기업소개</a>
+              </li>
+              <li>
+                <a href="#">가치체계</a>
+              </li>
+              <li>
+                <a href="#">인사말</a>
+              </li>
+              <li>
+                <a href="#">연구소</a>
+              </li>
+              <li>
+                <a href="#">공장</a>
+              </li>
+              <li>
+                <a href="#">글로벌사업</a>
+              </li>
+              <li>
+                <a href="#">오시는길</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">브랜드</a>
+          </li>
+          <li>
+            <a href="#">사회공헌</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">사회공헌 소개</a>
+              </li>
+              <li>
+                <a href="#">나눔 활동</a>
+              </li>
+              <li>
+                <a href="#">사회공헌 연혁</a>
+              </li>
+              <li>
+                <a href="#">나눔소식</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">상생&middot;윤리경영</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">상생경영</a>
+              </li>
+              <li>
+                <a href="#">윤리경영</a>
+              </li>
+              <li>
+                <a href="#">가족친화 경영</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">IR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">경영정보</a>
+              </li>
+              <li>
+                <a href="#">재무정보</a>
+              </li>
+              <li>
+                <a href="#">공시정보</a>
+              </li>
+              <li>
+                <a href="#">IR 자료실</a>
+              </li>
+              <li>
+                <a href="#">공고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PR</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">광고</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ESG 정보 공개</a>
+            <ul class="mdepth2">
+              <li>
+                <a href="#">환경경영(E)</a>
+              </li>
+              <li>
+                <a href="#">사회적 가치(S)</a>
+              </li>
+              <li>
+                <a href="#">지배구조(G)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="mfamily_site">
+          <li>
+            <a href="#">매일유업</a>
+          </li>
+          <li>
+            <a href="#">매일아이</a>
+          </li>
+          <li>
+            <a href="#">공식몰</a>
+          </li>
+          <li>
+            <a href="#">Maeil Do</a>
+          </li>
+        </ul>
+      </div>
+      <div class="depth2_bg"></div>
+    </header>
+    <div class="header_bg sub_03">
+      <ul class="breadcrumb">
+        <li>
+          <a href="#">
+            <img src="../img/sub/icon-breadcrumb-home.png" alt="홈">
+          </a>
+        </li>
+        <li>
+          <a href="#">사회공헌</a>
+        </li>
+        <li>
+          <a href="#">사회공헌 소개</a>
+        </li>
+      </ul>
+    </div>
+    <main id="main">
+      <div class="main_top">
+        <ul class="present-depth">
+          <li class="selected">
+            <a href="#">사회공헌 소개</a>
+          </li>
+        </ul>
+        <div class="tit_box">
+          <h2>Maeil CSR</h2>
+          <span></span>
+          <p>전문성과 진정성을 가지고 지속적으로<br>
+            모두가 행복한 세상을 위해 매일이 앞장서겠습니다</p>
+        </div>
+      </div>
+
+      <section id="csr">
+        <div class="inner">
+          <ul class="csr_list">
+            <li>
+              <div class="img_box">
+                <img src="../img/sub/sub03-img-csr01.png" alt=".">
+              </div>
+              <dl>
+                <dt>저출산 시대 극복을 위한<br>
+                  임신, 출산, 육아 문화 선도</dt>
+                <dd>예비 엄마들의 순산을 위한 전문 부모 교육 강좌 제공 및,<br>
+                  선천성 대사이상 환아들을 위한 특수 유아식을 개발합니다.</dd>
+                <dd>
+                  <a href="#" class="btn_more">더 알아보기</a>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>저소득층을 위한<br>
+                  온기 나눔 활동</dt>
+                <dd>저소득 가구, 결식 아동, 독거노인을 대상으로 한<br>
+                  도시락과 난방용품 나눔 활동을 이어오고 있습니다.</dd>
+                <dd>
+                  <a href="#" class="btn_more">더 알아보기</a>
+                </dd>
+              </dl>
+              <div class="img_box">
+                <img src="../img/sub/sub03-img-csr02.png" alt=".">
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="../img/sub/sub03-img-csr03.png" alt=".">
+              </div>
+              <dl>
+                <dt>다양함을 포용하는<br>
+                  온정의 손길 </dt>
+                <dd>다문화 가정과 한부모 가정을 대상으로<br>
+                  유아식 제품과 교육 봉사단을 후원하고 있습니다.</dd>
+                <dd>
+                  <a href="#" class="btn_more">더 알아보기</a>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>모두의 특별함이<br>
+                  인정받는 세상을 향해</dt>
+                <dd>발달장애인들의 사회적 포용을 확대하기 위한<br>
+                  다양한 활동을 지원하고 있습니다</dd>
+                <dd>
+                  <a href="#" class="btn_more">더 알아보기</a>
+                </dd>
+              </dl>
+              <div class="img_box">
+                <img src="../img/sub/sub03-img-csr04.png" alt=".">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="left">
+            <div class="footer_logo">
+              <img src="../img/main/logo_footer.png" alt="매일유업">
+            </div>
+            <ul class="contract_list">
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">전자입찰(협력사용)</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul class="sns_icon_list">
+              <li>
+                <img src="../img/main/icon_sns01.png" alt="인스타그램">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns02.png" alt="페이스북">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns03.png" alt="유튜브">
+              </li>
+              <li>
+                <img src="../img/main/icon_sns04.png" alt="네이버">
+              </li>
+            </ul>
+            <select>
+              <option>패밀리사이트</option>
+              <option>매일홀딩스</option>
+              <option>매일헬스뉴트리션</option>
+              <option>제로투세븐</option>
+              <option>상하농원</option>
+              <option>엠즈씨드(폴바셋)</option>
+              <option>크리스탈제이드</option>
+              <option>엠즈씨드(더키친일뽀르노)</option>
+              <option>엠즈베버리지</option>
+              <option>엠즈푸드시스템</option>
+              <option>엠즈파트너스</option>
+              <option>레뱅드매일</option>
+              <option>엠디웰</option>
+              <option>엠즈베이커스</option>
+              <option>매일오더</option>
+            </select>
+            <div class="tel">
+              <a href="tel:1588-1539">Contact US : 1588-1539</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="left">
+            <address>서울시 종로구 종로 1길 50 더 케이 트윈타워 A동 2층</address>
+            <div class="copy">Copyright(c) 2016 by Maeil Dairies Co.Ltd All rights reserved.</div>
+          </div>
+          <p class="portfolio">본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, <br>사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.</p>
+        </div>
+      </div>
+    </footer>
+  </div><!--//#wrap-->
+</body>
+
+</html>
